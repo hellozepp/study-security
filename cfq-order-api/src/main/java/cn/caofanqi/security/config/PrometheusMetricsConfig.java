@@ -10,7 +10,7 @@ import javax.annotation.Resource;
 
 /**
  * 监控指标设置
- *
+ * jmxExporter
  * @author hellozepp
  * @date 2020/2/15 12:16
  */
