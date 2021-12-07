@@ -14,7 +14,7 @@ import javax.annotation.Resource;
 /**
  * Http和Https双支持配置
  *
- * @author caofanqi
+ * @author hellozepp
  * @date 2020/1/28 22:35
  */
 @Configuration

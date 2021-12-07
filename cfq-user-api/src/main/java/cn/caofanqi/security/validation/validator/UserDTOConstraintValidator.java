@@ -10,7 +10,7 @@ import javax.validation.ConstraintValidatorContext;
 /**
  * 自定义UserDTO类校验器
  *
- * @author caofanqi
+ * @author hellozepp
  * @date 2020/1/28 1:36
  */
 @Slf4j

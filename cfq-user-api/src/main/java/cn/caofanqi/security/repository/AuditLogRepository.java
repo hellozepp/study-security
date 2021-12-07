@@ -5,7 +5,7 @@ import org.springframework.data.jpa.repository.support.JpaRepositoryImplementati
 
 /**
  * 审计日志Repository
- * @author caofanqi
+ * @author hellozepp
  * @date 2020/1/28 23:13
  */
 public interface AuditLogRepository extends JpaRepositoryImplementation<AuditLogDO,Long> {

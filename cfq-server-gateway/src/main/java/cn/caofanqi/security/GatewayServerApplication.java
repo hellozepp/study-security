@@ -7,7 +7,7 @@ import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 /**
  * 网关
  *
- * @author caofanqi
+ * @author hellozepp
  * @date 2020/2/2 15:36
  */
 @EnableZuulProxy

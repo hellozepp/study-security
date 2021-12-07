@@ -10,7 +10,7 @@ import javax.annotation.Resource;
 /**
  * webmvc配置类
  *
- * @author caofanqi
+ * @author hellozepp
  * @date 2020/2/15 12:27
  */
 @Configuration

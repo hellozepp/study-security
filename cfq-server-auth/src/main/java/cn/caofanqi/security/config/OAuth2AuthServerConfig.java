@@ -23,7 +23,7 @@ import javax.sql.DataSource;
  * 需要继承AuthorizationServerConfigurerAdapter类，覆盖里面三个configure方法
  * 并添加@EnableAuthorizationServer注解，指定当前应用做为认证服务器
  *
- * @author caofanqi
+ * @author hellozepp
  * @date 2020/1/31 18:04
  */
 @Configuration
@@ -89,9 +89,9 @@ public class OAuth2AuthServerConfig extends AuthorizationServerConfigurerAdapter
     @Bean
     public JwtAccessTokenConverter jwtTokenEnhancer() {
         JwtAccessTokenConverter jwtAccessTokenConverter = new JwtAccessTokenConverter();
-        //jwtAccessTokenConverter.setSigningKey("123456");
-        KeyStoreKeyFactory keyStoreKeyFactory = new KeyStoreKeyFactory(new ClassPathResource("cfq.key"), "123456".toCharArray());
-        jwtAccessTokenConverter.setKeyPair(keyStoreKeyFactory.getKeyPair("cfq"));
+        jwtAccessTokenConverter.setSigningKey("123456");
+//        KeyStoreKeyFactory keyStoreKeyFactory = new KeyStoreKeyFactory(new ClassPathResource("cfq.key"), "123456".toCharArray());
+//        jwtAccessTokenConverter.setKeyPair(keyStoreKeyFactory.getKeyPair("cfq"));
         return jwtAccessTokenConverter;
     }
 

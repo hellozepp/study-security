@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * OAuth2认证服务器
  *
- * @author caofanqi
+ * @author hellozepp
  * @date 2020/1/31 18:00
  */
 @SpringBootApplication

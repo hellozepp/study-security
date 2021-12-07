@@ -9,5 +9,5 @@ zuul:
   routes:
     api:
       path: /api/**
-      url: http://gateway.caofanqi.cn:9010
+      url: http://gateway.hellozepp.cn:9010
   sensitive-headers:

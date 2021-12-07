@@ -17,7 +17,7 @@ import javax.annotation.Resource;
 /**
  * WebSecurity安全配置
  *
- * @author caofanqi
+ * @author hellozepp
  * @date 2020/1/31 22:48
  */
 @Configuration

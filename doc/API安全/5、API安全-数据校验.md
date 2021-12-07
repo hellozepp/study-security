@@ -119,7 +119,7 @@ hibernate-validator中在org.hibernate.validator.constraints包下也提供了�
 
 ​		这里我们可以自定义一个类校验注解，这样就可以拿到所有的属性，然后进行校验。
 
-
+例子：cn.caofanqi.security.web.controller.UserController.batchCreate
 
 Bean Validation官网：<https://beanvalidation.org/>
 

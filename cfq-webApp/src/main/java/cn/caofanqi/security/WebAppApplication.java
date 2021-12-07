@@ -25,7 +25,7 @@ import java.io.IOException;
 /**
  * 模拟前端服务器
  *
- * @author caofanqi
+ * @author hellozepp
  * @date 2020/2/5 16:34
  */
 @Slf4j
@@ -44,10 +44,10 @@ public class WebAppApplication {
     /**
      * 获取当前认证的token信息
      */
-//    @GetMapping("/me")
-//    public TokenInfoDTO me(HttpServletRequest request) {
-//        return (TokenInfoDTO) request.getSession().getAttribute("token");
-//    }
+    @GetMapping("/me")
+    public TokenInfoDTO me(HttpServletRequest request) {
+        return (TokenInfoDTO) request.getSession().getAttribute("token");
+    }
 
 
 
@@ -61,7 +61,7 @@ public class WebAppApplication {
     @GetMapping("/oauth/callback")
     public void oauthCallback(@RequestParam String code, String state, HttpServletRequest request, HttpServletResponse response) throws IOException {
 
-        String oauthTokenUrl = "http://gateway.caofanqi.cn:9010/token/oauth/token";
+        String oauthTokenUrl = "http://gateway.hellozepp.cn:9010/token/oauth/token";
 
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
@@ -70,7 +70,7 @@ public class WebAppApplication {
         MultiValueMap<String, String> params = new LinkedMultiValueMap<>();
         params.set("code", code);
         params.set("grant_type", "authorization_code");
-        params.set("redirect_uri", "http://web.caofanqi.cn:9000/oauth/callback");
+        params.set("redirect_uri", "http://web.hellozepp.cn:9000/oauth/callback");
 
         HttpEntity<MultiValueMap<String, String>> httpEntity = new HttpEntity<>(params, headers);
 
@@ -83,13 +83,13 @@ public class WebAppApplication {
         //将token放到cookie中
         Cookie accessTokenCookie = new Cookie("access_token",authResult.getBody().getAccess_token());
         accessTokenCookie.setMaxAge(authResult.getBody().getExpires_in().intValue() - 5);
-        accessTokenCookie.setDomain("caofanqi.cn");
+        accessTokenCookie.setDomain("hellozepp.cn");
         accessTokenCookie.setPath("/");
         response.addCookie(accessTokenCookie);
 
         Cookie refreshTokenCookie = new Cookie("refresh_token",authResult.getBody().getRefresh_token());
         refreshTokenCookie.setMaxAge(2592000);
-        refreshTokenCookie.setDomain("caofanqi.cn");
+        refreshTokenCookie.setDomain("hellozepp.cn");
         refreshTokenCookie.setPath("/");
         response.addCookie(refreshTokenCookie);
 

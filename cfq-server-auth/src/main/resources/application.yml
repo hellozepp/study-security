@@ -10,9 +10,9 @@ spring:
     name: auth-server
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/study-security?characterEncoding=UTF-8&useSSL=false
+    url: jdbc:mysql://localhost:13306/study_security?characterEncoding=UTF-8&useSSL=false
     username: root
-    password: root
+    password: mlsql
   #speing-session相关配置
   session:
     #指定存储类型，这里使用JDBC

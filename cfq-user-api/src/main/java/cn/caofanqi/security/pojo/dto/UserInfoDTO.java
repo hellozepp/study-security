@@ -8,7 +8,7 @@ import javax.validation.constraints.Pattern;
 /**
  * 用户详情，为了测试级联校验
  *
- * @author caofanqi
+ * @author hellozepp
  * @date 2020/1/27 22:39
  */
 @Data

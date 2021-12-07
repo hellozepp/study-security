@@ -11,7 +11,7 @@ import javax.annotation.Resource;
 /**
  * 监控指标设置
  *
- * @author caofanqi
+ * @author hellozepp
  * @date 2020/2/15 12:16
  */
 @Configuration

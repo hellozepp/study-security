@@ -15,7 +15,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 /**
  * 自定义校验注解，具体的校验逻辑由@Constraint进行指定，可以指定多个
  *
- * @author caofanqi
+ * @author hellozepp
  */
 @Documented
 @Target({FIELD})

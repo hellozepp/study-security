@@ -6,7 +6,7 @@ import javax.servlet.http.HttpServletRequest;
 
 /**
  * 权限控制
- * @author caofanqi
+ * @author hellozepp
  * @date 2020/2/9 14:48
  */
 public interface PermissionService {

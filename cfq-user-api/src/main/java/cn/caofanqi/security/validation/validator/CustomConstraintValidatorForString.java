@@ -10,7 +10,7 @@ import javax.validation.ConstraintValidatorContext;
  * 自定义注解校验器，实现ConstraintValidator接口，并指定要校验的注解和要校验的类型，
  * initialize可以获得注解上的属性，进行初始化；isValid校验逻辑。
  *
- * @author caofanqi
+ * @author hellozepp
  * @version 1.0.0
  * @date 2020/1/27 23:17
  */

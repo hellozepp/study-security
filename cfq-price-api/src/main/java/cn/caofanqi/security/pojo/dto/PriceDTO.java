@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 /**
  * 价格DTO
  *
- * @author caofanqi
+ * @author hellozepp
  * @date 2020/1/31 14:42
  */
 @Data

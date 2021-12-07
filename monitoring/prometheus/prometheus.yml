@@ -3,13 +3,13 @@ global:
   #间隔多久去拉取一次数据
   scrape_interval:   15s
 
-# 要拉取的目标是哪里
+# 要拉取的目标
 scrape_configs:
-# 我们的springboot项目
+# 我们的springboot项目job名称
 - job_name:       'springboot-app'
   #间隔10s拉取一次数据，覆盖全局配置
   scrape_interval: 10s
-  #请求的路径
+  #请求的路径,注意此处使用，访问的时候必须访问/actuator/prometheus,如不配置则访问/prometheus
   metrics_path: '/actuator/prometheus'
 
   static_configs:

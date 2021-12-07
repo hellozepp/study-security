@@ -22,5 +22,5 @@
 
 ​		可控性低：token存在浏览器，没办法主动失效掉。
 
-​		跨域问题：cookie只能放在顶级域名下(caofanqi.cn)，只有二级域名（web.caofanqi.cn、order.caofanqi.cn）才可以做SSO。如果要与baidu.com做SSO的话，需要同时设置多个cookie。
+​		跨域问题：cookie只能放在顶级域名下(hellozepp.cn)，只有二级域名（web.hellozepp.cn、order.hellozepp.cn）才可以做SSO。如果要与baidu.com做SSO的话，需要同时设置多个cookie。
 

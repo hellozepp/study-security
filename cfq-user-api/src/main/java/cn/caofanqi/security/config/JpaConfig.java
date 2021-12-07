@@ -15,7 +15,7 @@ import java.util.Optional;
 /**
  * JPA相关配置
  *
- * @author caofanqi
+ * @author hellozepp
  * @date 2020/1/29 1:13
  */
 @Configuration

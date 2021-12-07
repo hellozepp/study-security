@@ -8,4 +8,4 @@ security:
       client-secret: 123456
     resource:
       jwt:
-        key-uri: http://auth.caofanqi.cn:9020/oauth/token_key
+        key-uri: http://auth.hellozepp.cn:9020/oauth/token_key

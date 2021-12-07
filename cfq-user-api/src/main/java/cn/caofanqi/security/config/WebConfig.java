@@ -11,7 +11,7 @@ import javax.annotation.Resource;
 /**
  * web配置类
  *
- * @author caofanqi
+ * @author hellozepp
  * @date 2020/1/28 22:32
  */
 @Configuration

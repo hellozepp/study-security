@@ -15,12 +15,12 @@ import java.util.List;
 /**
  * 从远程配置中心获取规则，进行配置
  *
- * @author caofanqi
+ * @author hellozepp
  * @date 2020/2/11 15:50
  */
 @Component
 public class SentinelConfig{
-
+    // zk地址  ip:port
     @Value("${sentinel.zookeeper.address}")
     private String remoteAddress;
 

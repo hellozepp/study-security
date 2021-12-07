@@ -14,12 +14,12 @@ import java.io.IOException;
 /**
  * 限流过滤器
  *
- * @author caofanqi
+ * @author hellozepp
  * @date 2020/2/9 23:54
  */
 public class GatewayRateLimitFilter extends OncePerRequestFilter {
 
-    private RateLimiter rateLimiter = RateLimiter.create(1);
+    private RateLimiter rateLimiter = RateLimiter.create(100);
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {

@@ -14,7 +14,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
 /**
  * 自定义类级别注解
- * @author caofanqi
+ * @author hellozepp
  */
 @Documented
 @Target({TYPE})

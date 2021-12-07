@@ -13,7 +13,7 @@ import javax.annotation.Resource;
 /**
  * 网关资源服务器配置
  *
- * @author caofanqi
+ * @author hellozepp
  * @date 2020/2/8 22:30
  */
 @Configuration

@@ -7,6 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.mindrot.jbcrypt.BCrypt;
 import org.springframework.core.annotation.Order;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Component;
 import org.springframework.util.Base64Utils;
 import org.springframework.web.filter.OncePerRequestFilter;
@@ -24,7 +25,7 @@ import static javax.swing.text.html.CSS.getAttribute;
 /**
  * HttpBasic 认证
  *
- * @author caofanqi
+ * @author hellozepp
  * @date 2020/1/21 15:10
  */
 @Slf4j
@@ -82,4 +83,7 @@ public class BasicAuthorizationFilter extends OncePerRequestFilter {
 
     }
 
+//    public static void main(String[] args) {
+//        System.out.println(new BCryptPasswordEncoder().encode("123123"));
+//    }
 }

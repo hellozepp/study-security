@@ -18,7 +18,7 @@ import java.io.IOException;
  * 流控过滤器
  * 继承OncePerRequestFilter，保证一次请求只执行一次该过滤器
  *
- * @author caofanqi
+ * @author hellozepp
  * @date 2020/1/20 23:29
  */
 @Slf4j

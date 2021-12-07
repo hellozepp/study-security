@@ -20,7 +20,7 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * 将session中的token取出放到请求头中
  *
- * @author caofanqi
+ * @author hellozepp
  * @date 2020/2/6 0:34
  */
 @Slf4j
@@ -56,7 +56,7 @@ public class SessionTokenFilter extends ZuulFilter {
             String accessToken = token.getAccess_token();
             //判断access_token是否过期，需要刷新令牌
             if (token.isExpires()){
-                String oauthTokenUrl = "http://gateway.caofanqi.cn:9010/token/oauth/token";
+                String oauthTokenUrl = "http://gateway.hellozepp.cn:9010/token/oauth/token";
 
                 HttpHeaders headers = new HttpHeaders();
                 headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);

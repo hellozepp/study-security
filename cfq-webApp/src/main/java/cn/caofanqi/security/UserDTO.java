@@ -5,7 +5,7 @@ import lombok.Data;
 /**
  * 登陆信息
  *
- * @author caofanqi
+ * @author hellozepp
  * @date 2020/2/5 19:45
  */
 @Data

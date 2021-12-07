@@ -4,10 +4,10 @@ server:
 zuul:
   routes:
     token:
-      url: http://auth.caofanqi.cn:9020
+      url: http://auth.hellozepp.cn:9020
       path: /token/**
     order:
-      url: http://order.caofanqi.cn:9080
+      url: http://order.hellozepp.cn:9080
       path: /order/**
   sensitive-headers:
 
@@ -18,4 +18,4 @@ security:
       client-secret: 123456
     resource:
       jwt:
-        key-uri: http://auth.caofanqi.cn:9020/oauth/token_key
+        key-uri: http://auth.hellozepp.cn:9020/oauth/token_key

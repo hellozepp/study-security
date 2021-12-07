@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
 /**
  * token信息
  *
- * @author caofanqi
+ * @author hellozepp
  * @date 2020/2/5 19:11
  */
 @Data

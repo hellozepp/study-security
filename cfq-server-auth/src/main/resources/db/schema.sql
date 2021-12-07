@@ -1,3 +1,5 @@
+CREATE DATABASE if not exists study_security default character set utf8mb4 collate utf8mb4_unicode_ci;
+use study_security;
 create table oauth_client_details (
   client_id VARCHAR(256) PRIMARY KEY,
   resource_ids VARCHAR(256),

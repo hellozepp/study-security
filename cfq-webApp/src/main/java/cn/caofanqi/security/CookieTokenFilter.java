@@ -23,7 +23,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * 将cookie中的token取出放到请求头中
  *
- * @author caofanqi
+ * @author hellozepp
  * @date 2020/2/6 0:34
  */
 @Slf4j
@@ -62,7 +62,7 @@ public class CookieTokenFilter extends ZuulFilter {
             String refreshToken = getCookie("refresh_token");
             if (StringUtils.isNotBlank(refreshToken)) {
                 //去认证服务器刷新令牌
-                String oauthTokenUrl = "http://gateway.caofanqi.cn:9010/token/oauth/token";
+                String oauthTokenUrl = "http://gateway.hellozepp.cn:9010/token/oauth/token";
 
                 HttpHeaders headers = new HttpHeaders();
                 headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
@@ -80,13 +80,13 @@ public class CookieTokenFilter extends ZuulFilter {
 
                     Cookie accessTokenCookie = new Cookie("access_token", refreshTokenResult.getBody().getAccess_token());
                     accessTokenCookie.setMaxAge(refreshTokenResult.getBody().getExpires_in().intValue() - 5);
-                    accessTokenCookie.setDomain("caofanqi.cn");
+                    accessTokenCookie.setDomain("hellozepp.cn");
                     accessTokenCookie.setPath("/");
                     response.addCookie(accessTokenCookie);
 
                     Cookie refreshTokenCookie = new Cookie("refresh_token", refreshTokenResult.getBody().getRefresh_token());
                     refreshTokenCookie.setMaxAge(2592000);
-                    refreshTokenCookie.setDomain("caofanqi.cn");
+                    refreshTokenCookie.setDomain("hellozepp.cn");
                     refreshTokenCookie.setPath("/");
                     response.addCookie(refreshTokenCookie);
 

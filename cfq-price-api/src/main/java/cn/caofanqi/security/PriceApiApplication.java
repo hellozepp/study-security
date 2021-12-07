@@ -7,7 +7,7 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.E
 /**
  * 价格微服务
  *
- * @author caofanqi
+ * @author hellozepp
  * @date 2020/1/31 14:40
  */
 @EnableResourceServer

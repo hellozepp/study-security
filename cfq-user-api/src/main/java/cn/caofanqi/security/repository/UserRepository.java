@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
  * 用户持久层接口
- * @author caofanqi
+ * @author hellozepp
  * @date 2020/1/20 14:58
  */
 public interface UserRepository extends JpaRepositoryImplementation<UserDO,Long> {

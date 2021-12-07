@@ -9,7 +9,7 @@ import org.springframework.web.client.RestTemplate;
 
 /**
  * 故意调用错误方法
- * @author caofanqi
+ * @author hellozepp
  * @date 2020/2/14 17:21
  */
 public class Test {
@@ -30,7 +30,9 @@ public class Test {
         while (true){
             try {
                 restTemplate.exchange("http://127.0.0.1:9080/orders", HttpMethod.POST,httpEntity,String.class);
-            }catch (Exception e){}
+            }catch (Exception e){
+                e.printStackTrace();
+            }
         }
 
     }

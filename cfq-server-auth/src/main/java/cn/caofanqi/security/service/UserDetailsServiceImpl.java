@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * 查询用户信息
- * @author caofanqi
+ * @author hellozepp
  * @date 2020/2/1 3:41
  */
 @Component
