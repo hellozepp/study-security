@@ -54,7 +54,7 @@ public class OrderController {
         return defaultOrderDTO;
     }
 
-
+//    http://localhost:9080/order/orders/1 直接访问，会提示需要认证
     @GetMapping("/{id}")
     @SentinelResource(value = "getOrder")
     public OrderDTO get(@PathVariable Long id, @AuthenticationPrincipal String username) {

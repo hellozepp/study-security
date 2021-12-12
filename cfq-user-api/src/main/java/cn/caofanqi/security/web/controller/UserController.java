@@ -53,7 +53,7 @@ public class UserController {
         return userService.query(name);
     }
 
-
+//测试访问：https://localhost:8443/users/1
     @GetMapping("/{id}")
     public UserDTO get(@PathVariable Long id, HttpServletRequest request, HttpServletResponse response) throws IOException {
 

@@ -14,11 +14,12 @@ import java.util.List;
 
 /**
  * 从远程配置中心获取规则，进行配置
+ * 如果使用自动配置，可以去掉我们的手动配置了
  *
  * @author hellozepp
  * @date 2020/2/11 15:50
  */
-@Component
+//@Component
 public class SentinelConfig{
     // zk地址  ip:port
     @Value("${sentinel.zookeeper.address}")
